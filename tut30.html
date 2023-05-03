@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title> 
+    <!-- to make resposible design -->
+    <style>
+        .box{
+            background-color: red;
+            color:white;
+            font-size: 72px;
+            text-align: center;
+            display: none;
+        }
+        @media only screen and (max-width:300px){
+            #box1{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            #box2{
+                display: block;
+                background-color: cyan;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:800px){
+            #box3{
+                display: block;
+                background-color: salmon;
+            }
+        }
+        @media only screen and (min-width:800px) and (max-width:1500px){
+            #box4{
+                display: block;
+                background-color:brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Mai ek IPone hu</div>
+    <div class="box" id="box2">Mai ek Tablet hu</div>
+    <div class="box" id="box3">Mai ek Computer hu</div>
+    <div class="box" id="box4">Mai ek Remote hu</div>
+
+  
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            font-size: 4rem;
+        }
+    /* section::after{
+        content: "this is a content";
+    } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to Coding World </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa nemo provident necessitatibus eligendi facere omnis numquam, sunt ex ea reiciendis similique aliquam </p>
+        </section>
+        <hr>
+    </header>
+    
+</body>
+</html>

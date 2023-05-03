@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .container{
+            height: 600px;
+            border: 2px solid red;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+        #box1{
+            background-color: pink;
+            position: relative;
+            top: 50px;
+            z-index: 6;
+        }
+        #box2{
+            background-color: yellow;
+             position: relative; 
+            z-index: 4;
+        }
+        #box3{
+            background-color: red;
+        }
+        #box4{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Anshika</div>
+        <div class="box" id="box2">Utkarsh</div>
+        <div class="box" id="box3">Ayushi</div>
+        <div class="box" id="box4">Vansh</div>
+    </div>
+    
+</body>
+</html>
